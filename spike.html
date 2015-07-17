@@ -43,29 +43,384 @@
 					 <h2>決定率計算</h2>
 					 <p>決定率とミス率を算出</p>
 					</div>
+                      
 					<script type="text/javascript">
-
-var count=new Object();
-count.i=0;
-count.f=function(){
-	this.i++;
-	var html=this.i;
-	document.getElementById("counter").innerHTML=html;
-}
-
-</script>
+                        //打数
+                        var count=new Object();
+                        count.i1=0;
+                        count.f1=function(){
+	                       this.i1++;
+	                       var html=this.i1;
+	                       document.getElementById("counter1").innerHTML=html;
+                        }
+                        
+                        count.m1 = function(){
+                            this.i1--;
+                            var html = this.i1;
+                            document.getElementById("counter1").innerHTML = html;
+                        }
+                        
+                        var count2=new Object();
+                        count2.i2=0;
+                        count2.f2=function(){
+	                       this.i2++;
+	                       var html=this.i2;
+	                       document.getElementById("counter2").innerHTML=html;
+                        }
+                        
+                        count2.m2 = function(){
+                            this.i2--;
+                            var html = this.i2;
+                            document.getElementById("counter2").innerHTML = html;
+                        }
+                        
+                        var count3=new Object();
+                        count3.i3=0;
+                        count3.f3=function(){
+	                       this.i3++;
+	                       var html=this.i3;
+	                       document.getElementById("counter3").innerHTML=html;
+                        }
+                        
+                        count3.m3 = function(){
+                            this.i3--;
+                            var html = this.i3;
+                            document.getElementById("counter3").innerHTML = html;
+                        }
+                        
+                        var count4=new Object();
+                        count4.i4=0;
+                        count4.f4=function(){
+	                       this.i4++;
+	                       var html=this.i4;
+	                       document.getElementById("counter4").innerHTML=html;
+                        }
+                        
+                        count4.m1 = function(){
+                            this.i4--;
+                            var html = this.i4;
+                            document.getElementById("counter4").innerHTML = html;
+                        }
+                        
+                        var count5=new Object();
+                        count5.i5=0;
+                        count5.f5=function(){
+	                       this.i5++;
+	                       var html=this.i5;
+	                       document.getElementById("counter5").innerHTML=html;
+                        }
+                        
+                        count5.m5 = function(){
+                            this.i5--;
+                            var html = this.i5;
+                            document.getElementById("counter5").innerHTML = html;
+                        }
+                        
+                        var count6=new Object();
+                        count6.i6=0;
+                        count6.f6=function(){
+	                       this.i6++;
+	                       var html=this.i6;
+	                       document.getElementById("counter6").innerHTML=html;
+                        }
+                        
+                        count6.m6 = function(){
+                            this.i6--;
+                            var html = this.i6;
+                            document.getElementById("counter6").innerHTML = html;
+                        }
+                        
+                        //決定本数
+                        
+                        var success = new Object();
+                        success.i=0;
+                        success.f=function(){
+	                       this.i++;
+	                       var html=this.i;
+	                       document.getElementById("success").innerHTML=html;
+                        }
+                        
+                        success.m = function(){
+                            this.i--;
+                            var html = this.i;
+                            document.getElementById("success").innerHTML = html;
+                        }
+                        
+                        var success2 = new Object();
+                        success2.i2=0;
+                        success2.f2=function(){
+	                       this.i2++;
+	                       var html=this.i2;
+	                       document.getElementById("success2").innerHTML=html;
+                        }
+                        
+                        success2.m2 = function(){
+                            this.i2--;
+                            var html = this.i2;
+                            document.getElementById("success2").innerHTML = html;
+                        }
+                        var success3 = new Object();
+                        success3.i3=0;
+                        success3.f3=function(){
+	                       this.i3++;
+	                       var html=this.i3;
+	                       document.getElementById("success3").innerHTML=html;
+                        }
+                        
+                        success3.m3 = function(){
+                            this.i3--;
+                            var html = this.i3;
+                            document.getElementById("success3").innerHTML = html;
+                        }
+                        var success4 = new Object();
+                        success4.i4=0;
+                        success4.f4=function(){
+	                       this.i4++;
+	                       var html=this.i4;
+	                       document.getElementById("success4").innerHTML=html;
+                        }
+                        
+                        success4.m4 = function(){
+                            this.i4--;
+                            var html = this.i4;
+                            document.getElementById("success4").innerHTML = html;
+                        }
+                        var success5 = new Object();
+                        success5.i5=0;
+                        success5.f5=function(){
+	                       this.i5++;
+	                       var html=this.i5;
+	                       document.getElementById("success5").innerHTML=html;
+                        }
+                        
+                        success5.m5 = function(){
+                            this.i5--;
+                            var html = this.i5;
+                            document.getElementById("success5").innerHTML = html;
+                        }
+                        var success6 = new Object();
+                        success6.i6=0;
+                        success6.f6=function(){
+	                       this.i6++;
+	                       var html=this.i6;
+	                       document.getElementById("success6").innerHTML=html;
+                        }
+                        
+                        success6.m6 = function(){
+                            this.i6--;
+                            var html = this.i6;
+                            document.getElementById("success6").innerHTML = html;
+                        }
+                        
+                        //失敗
+                        var miss = new Object();
+                        miss.i1=0;
+                        miss.f1=function(){
+	                       this.i1++;
+	                       var html=this.i1;
+	                       document.getElementById("miss").innerHTML=html;
+                        }
+                        
+                        miss.m1 = function(){
+                            this.i1--;
+                            var html = this.i1;
+                            document.getElementById("miss").innerHTML = html;
+                        }
+                       
+                        var miss2 = new Object();
+                        miss2.i2=0;
+                        miss2.f2=function(){
+	                       this.i2++;
+	                       var html=this.i2;
+	                       document.getElementById("miss2").innerHTML=html;
+                        }
+                        
+                        miss2.m2 = function(){
+                            this.i2--;
+                            var html = this.i2;
+                            document.getElementById("miss2").innerHTML = html;
+                        }
+                        var miss3 = new Object();
+                        miss3.i3=0;
+                        miss3.f3=function(){
+	                       this.i3++;
+	                       var html=this.i3;
+	                       document.getElementById("miss3").innerHTML=html;
+                        }
+                        
+                        miss3.m3 = function(){
+                            this.i3--;
+                            var html = this.i3;
+                            document.getElementById("miss3").innerHTML = html;
+                        }
+                        var miss4 = new Object();
+                        miss4.i4=0;
+                        miss4.f4=function(){
+	                       this.i4++;
+	                       var html=this.i4;
+	                       document.getElementById("miss4").innerHTML=html;
+                        }
+                        
+                        miss4.m4 = function(){
+                            this.i4--;
+                            var html = this.i4;
+                            document.getElementById("miss4").innerHTML = html;
+                        }
+                        var miss5 = new Object();
+                        miss5.i5=0;
+                        miss5.f5=function(){
+	                       this.i5++;
+	                       var html=this.i5;
+	                       document.getElementById("miss5").innerHTML=html;
+                        }
+                        
+                        miss5.m5 = function(){
+                            this.i5--;
+                            var html = this.i5;
+                            document.getElementById("miss5").innerHTML = html;
+                        }
+                        var miss6 = new Object();
+                        miss6.i6=0;
+                        miss6.f6=function(){
+	                       this.i6++;
+	                       var html=this.i6;
+	                       document.getElementById("miss6").innerHTML=html;
+                        }
+                        
+                        miss6.m6 = function(){
+                            this.i6--;
+                            var html = this.i6;
+                            document.getElementById("miss6").innerHTML = html;
+                        }
+                        
+                    </script>
 
 </head>
 
 <body>
 
-<div id="counter">クリックカウンター</div><br />
+   
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">計算するよ</div>
+      <!-- Table -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th><center>名前</center></th>
+            <th><center>打数</center></th>
+            <th><center>成功</center></th>
+            <th><center>失敗</center></th>
+            <th><center>決定率</center></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td><br><br><FORM>
+<INPUT type="text" name="namae">
+</FORM></td>
+            <td> <button onclick=count.f1()>＋</button>
+                <div id="counter1">0</div>
+                <button onclick=count.m1()>ー</button></td>
+            <td><button onclick=success.f()>＋</button>
+                <div id="success">0</div>
+                <button onclick=success.m()>ー</button></td>
+              <td><button onclick=miss.f1()>＋</button>
+                <div id="miss">0</div>
+                <button onclick=miss.m1()>ー</button></td>
+              <td></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td><br><br><FORM>
+<INPUT type="text" name="namae">
+</FORM></td>
+            <td><button onclick=count2.f2()>＋</button>
+                <div id="counter2">0</div>
+                <button onclick=count2.m2()>ー</button></td>
+            <td><button onclick=success2.f2()>＋</button>
+                <div id="success2">0</div>
+                <button onclick=success2.m2()>ー</button></td>
+            <td><button onclick=miss2.f2()>＋</button>
+                <div id="miss2">0</div>
+                <button onclick=miss2.m2()>ー</button></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td><br><br><FORM>
+<INPUT type="text" name="namae">
+</FORM></td>
+            <td><button onclick=count3.f3()>＋</button>
+                <div id="counter3">0</div>
+                <button onclick=count3.m3()>ー</button></td>
+            <td><button onclick=success3.f3()>＋</button>
+                <div id="success3">0</div>
+                <button onclick=success3.m3()>ー</button></td>
+            <td><button onclick=miss3.f3()>＋</button>
+                <div id="miss3">0</div>
+                <button onclick=miss3.m3()>ー</button></td>
+            <td></td>
+          </tr>
+            <tr>
+            <th scope="row">4</th>
+            <td><br><br><FORM>
+<INPUT type="text" name="namae">
+</FORM></td>
+            <td><button onclick=count4.f4()>＋</button>
+                <div id="counter4">0</div>
+                <button onclick=count4.m4()>ー</button></td>
+            <td><button onclick=success4.f4()>＋</button>
+                <div id="success4">0</div>
+                <button onclick=success4.m4()>ー</button></td>
+            <td><button onclick=miss4.f4()>＋</button>
+                <div id="miss4">0</div>
+                <button onclick=miss4.m4()>ー</button></td>
+            <td></td>
+          </tr>
+            <tr>
+            <th scope="row">5</th>
+            <td><br><br><FORM>
+<INPUT type="text" name="namae">
+</FORM></td>
+            <td><button onclick=count5.f5()>＋</button>
+                <div id="counter5">0</div>
+                <button onclick=count5.m5()>ー</button></td>
+            <td><button onclick=success5.f5()>＋</button>
+                <div id="success5">0</div>
+                <button onclick=success5.m5()>ー</button></td>
+            <td><button onclick=miss5.f5()>＋</button>
+                <div id="miss5">0</div>
+                <button onclick=miss5.m5()>ー</button></td>
+            <td></td>
+          </tr>
+            <tr>
+            <th scope="row">6</th>
+            <td><br><br><FORM>
+<INPUT type="text" name="namae">
+</FORM></td>
+            <td><button onclick=count6.f6()>＋</button>
+                <div id="counter6">0</div>
+                <button onclick=count6.m6()>ー</button></td>
+            <td><button onclick=success6.f6()>＋</button>
+                <div id="success6">0</div>
+                <button onclick=success6.m6()>ー</button></td>
+            <td><button onclick=miss6.f6()>＋</button>
+                <div id="miss6">0</div>
+                <button onclick=miss6.m6()>ー</button></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 
-<button onclick=count.f()>クリック</button>
 				  </div>
 			  </div>
 			  <div class="row">
-                あ
                   
                 </div>	
                   <a href="http://cencha.github.io" class="btn btn-primary">HOME</a>
