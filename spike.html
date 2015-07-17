@@ -43,6 +43,25 @@
 					 <h2>決定率計算</h2>
 					 <p>決定率とミス率を算出</p>
 					</div>
+					<script type="text/javascript">
+
+var count=new Object();
+count.i=0;
+count.f=function(){
+	this.i++;
+	var html=this.i;
+	document.getElementById("counter").innerHTML=html;
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div id="counter">クリックカウンター</div><br />
+
+<button onclick=count.f()>クリック</button>
 				  </div>
 			  </div>
 			  <div class="row">
