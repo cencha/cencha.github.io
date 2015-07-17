@@ -45,254 +45,79 @@
 					</div>
                       
 					<script type="text/javascript">
-                        //打数
-                        var count=new Object();
-                        count.i1=0;
-                        count.f1=function(){
-	                       this.i1++;
-	                       var html=this.i1;
-	                       document.getElementById("counter1").innerHTML=html;
-                        }
-                        
-                        count.m1 = function(){
-                            this.i1--;
-                            var html = this.i1;
-                            document.getElementById("counter1").innerHTML = html;
-                        }
-                        
-                        var count2=new Object();
-                        count2.i2=0;
-                        count2.f2=function(){
-	                       this.i2++;
-	                       var html=this.i2;
-	                       document.getElementById("counter2").innerHTML=html;
-                        }
-                        
-                        count2.m2 = function(){
-                            this.i2--;
-                            var html = this.i2;
-                            document.getElementById("counter2").innerHTML = html;
-                        }
-                        
-                        var count3=new Object();
-                        count3.i3=0;
-                        count3.f3=function(){
-	                       this.i3++;
-	                       var html=this.i3;
-	                       document.getElementById("counter3").innerHTML=html;
-                        }
-                        
-                        count3.m3 = function(){
-                            this.i3--;
-                            var html = this.i3;
-                            document.getElementById("counter3").innerHTML = html;
-                        }
-                        
-                        var count4=new Object();
-                        count4.i4=0;
-                        count4.f4=function(){
-	                       this.i4++;
-	                       var html=this.i4;
-	                       document.getElementById("counter4").innerHTML=html;
-                        }
-                        
-                        count4.m1 = function(){
-                            this.i4--;
-                            var html = this.i4;
-                            document.getElementById("counter4").innerHTML = html;
-                        }
-                        
-                        var count5=new Object();
-                        count5.i5=0;
-                        count5.f5=function(){
-	                       this.i5++;
-	                       var html=this.i5;
-	                       document.getElementById("counter5").innerHTML=html;
-                        }
-                        
-                        count5.m5 = function(){
-                            this.i5--;
-                            var html = this.i5;
-                            document.getElementById("counter5").innerHTML = html;
-                        }
-                        
-                        var count6=new Object();
-                        count6.i6=0;
-                        count6.f6=function(){
-	                       this.i6++;
-	                       var html=this.i6;
-	                       document.getElementById("counter6").innerHTML=html;
-                        }
-                        
-                        count6.m6 = function(){
-                            this.i6--;
-                            var html = this.i6;
-                            document.getElementById("counter6").innerHTML = html;
-                        }
-                        
-                        //決定本数
-                        
-                        var success = new Object();
-                        success.i=0;
-                        success.f=function(){
-	                       this.i++;
-	                       var html=this.i;
-	                       document.getElementById("success").innerHTML=html;
-                        }
-                        
-                        success.m = function(){
-                            this.i--;
-                            var html = this.i;
-                            document.getElementById("success").innerHTML = html;
-                        }
-                        
-                        var success2 = new Object();
-                        success2.i2=0;
-                        success2.f2=function(){
-	                       this.i2++;
-	                       var html=this.i2;
-	                       document.getElementById("success2").innerHTML=html;
-                        }
-                        
-                        success2.m2 = function(){
-                            this.i2--;
-                            var html = this.i2;
-                            document.getElementById("success2").innerHTML = html;
-                        }
-                        var success3 = new Object();
-                        success3.i3=0;
-                        success3.f3=function(){
-	                       this.i3++;
-	                       var html=this.i3;
-	                       document.getElementById("success3").innerHTML=html;
-                        }
-                        
-                        success3.m3 = function(){
-                            this.i3--;
-                            var html = this.i3;
-                            document.getElementById("success3").innerHTML = html;
-                        }
-                        var success4 = new Object();
-                        success4.i4=0;
-                        success4.f4=function(){
-	                       this.i4++;
-	                       var html=this.i4;
-	                       document.getElementById("success4").innerHTML=html;
-                        }
-                        
-                        success4.m4 = function(){
-                            this.i4--;
-                            var html = this.i4;
-                            document.getElementById("success4").innerHTML = html;
-                        }
-                        var success5 = new Object();
-                        success5.i5=0;
-                        success5.f5=function(){
-	                       this.i5++;
-	                       var html=this.i5;
-	                       document.getElementById("success5").innerHTML=html;
-                        }
-                        
-                        success5.m5 = function(){
-                            this.i5--;
-                            var html = this.i5;
-                            document.getElementById("success5").innerHTML = html;
-                        }
-                        var success6 = new Object();
-                        success6.i6=0;
-                        success6.f6=function(){
-	                       this.i6++;
-	                       var html=this.i6;
-	                       document.getElementById("success6").innerHTML=html;
-                        }
-                        
-                        success6.m6 = function(){
-                            this.i6--;
-                            var html = this.i6;
-                            document.getElementById("success6").innerHTML = html;
-                        }
-                        
-                        //失敗
-                        var miss = new Object();
-                        miss.i1=0;
-                        miss.f1=function(){
-	                       this.i1++;
-	                       var html=this.i1;
-	                       document.getElementById("miss").innerHTML=html;
-                        }
-                        
-                        miss.m1 = function(){
-                            this.i1--;
-                            var html = this.i1;
-                            document.getElementById("miss").innerHTML = html;
-                        }
-                       
-                        var miss2 = new Object();
-                        miss2.i2=0;
-                        miss2.f2=function(){
-	                       this.i2++;
-	                       var html=this.i2;
-	                       document.getElementById("miss2").innerHTML=html;
-                        }
-                        
-                        miss2.m2 = function(){
-                            this.i2--;
-                            var html = this.i2;
-                            document.getElementById("miss2").innerHTML = html;
-                        }
-                        var miss3 = new Object();
-                        miss3.i3=0;
-                        miss3.f3=function(){
-	                       this.i3++;
-	                       var html=this.i3;
-	                       document.getElementById("miss3").innerHTML=html;
-                        }
-                        
-                        miss3.m3 = function(){
-                            this.i3--;
-                            var html = this.i3;
-                            document.getElementById("miss3").innerHTML = html;
-                        }
-                        var miss4 = new Object();
-                        miss4.i4=0;
-                        miss4.f4=function(){
-	                       this.i4++;
-	                       var html=this.i4;
-	                       document.getElementById("miss4").innerHTML=html;
-                        }
-                        
-                        miss4.m4 = function(){
-                            this.i4--;
-                            var html = this.i4;
-                            document.getElementById("miss4").innerHTML = html;
-                        }
-                        var miss5 = new Object();
-                        miss5.i5=0;
-                        miss5.f5=function(){
-	                       this.i5++;
-	                       var html=this.i5;
-	                       document.getElementById("miss5").innerHTML=html;
-                        }
-                        
-                        miss5.m5 = function(){
-                            this.i5--;
-                            var html = this.i5;
-                            document.getElementById("miss5").innerHTML = html;
-                        }
-                        var miss6 = new Object();
-                        miss6.i6=0;
-                        miss6.f6=function(){
-	                       this.i6++;
-	                       var html=this.i6;
-	                       document.getElementById("miss6").innerHTML=html;
-                        }
-                        
-                        miss6.m6 = function(){
-                            this.i6--;
-                            var html = this.i6;
-                            document.getElementById("miss6").innerHTML = html;
-                        }
-                        
+                        myTotal = 0;  
+mySuccess = 0;
+mySucper = 0;
+myMiss = 0;
+myMissper = 0;
+myInput = ""; 
+myCalc = "+"; 
+function myValue(myData){
+    myTotal += myData;
+    document.myForm.myLine.value = myTotal;
+    mySucper = (mySuccess / myTotal) * 100;
+    document.myForm3.myLine3.value = mySucper;
+}
+
+function myCalculate(myData){               
+    myWork = myTotal + myCalc + myInput;    
+    myTotal = eval(myWork);                 
+    myInput = "";                           
+}
+
+function myC(){                           
+  myTotal = 0;   
+  myTotal2 = 0;
+  myCalc = "+";                           
+  myInput = "";                           
+  document.myForm.myLine.value = myTotal; 
+}
+    
+function myValue2(myData2){
+mySuccess += myData2;
+mySucper = (mySuccess / myTotal) * 100;
+document.myForm2.myLine2.value = mySuccess;
+document.myForm3.myLine3.value = mySucper;
+}
+
+function myCalculate2(myData2){              
+    myWork2 = mySuccess + myCalc2 + myInput2;    
+    mySuccess = eval(myWork2);                
+    mySuccess = "";                           
+}
+
+function myC2(){  
+  myTotal = 0;
+  mySuccess = 0;
+  mySucper = 0;
+  myCalc2 = "+";                           
+  myInput2 = "";                           
+  document.myForm2.myLine2.value = mySuccess; 
+  document.myForm3.myLine3.value = mySucper;
+}
+    //失敗
+function myValue3(myData3){
+  myMiss += myData3;
+  myMissper = (myMiss / myTotal) * 100;
+  document.myForm4.myLine4.value = myMiss;
+  document.myForm5.myLine5.value = myMissper;
+}
+
+function myCalculate3(myData3){              
+    myWork3 = myMiss + myCalc3 + myInput3;    
+    myMiss = eval(myWork3);                
+    myMiss = "";                           
+}
+
+function myC3(){  
+  myTotal = 0;
+  myMiss = 0;
+  myMissper = 0;
+  myCalc3 = "+";                           
+  myInput3 = "";                           
+  document.myForm4.myLine4.value = myMiss; 
+  document.myForm5.myLine5.value = myMissper;
+}
                     </script>
 
 </head>
@@ -318,19 +143,58 @@
         <tbody>
           <tr>
             <th scope="row">1</th>
-            <td><br><br><FORM>
-<INPUT type="text" name="namae">
+            <td><FORM>
+<INPUT type="text" size = "10" name="namae">
 </FORM></td>
-            <td> <button onclick=count.f1()>＋</button>
-                <div id="counter1">0</div>
-                <button onclick=count.m1()>ー</button></td>
-            <td><button onclick=success.f()>＋</button>
-                <div id="success">0</div>
-                <button onclick=success.m()>ー</button></td>
-              <td><button onclick=miss.f1()>＋</button>
-                <div id="miss">0</div>
-                <button onclick=miss.m1()>ー</button></td>
-              <td></td>
+            <td> <form name="myForm">
+<table border="0" bgcolor="#BDB76B">
+<tr>
+<td align="center" colspan="4" bgcolor="#d2691e"></td>
+</tr>
+<tr>
+<td colspan="3"><input type="text" size="5" name="myLine" value="0"></td>
+<td align="center"><input type="button" value="Ｃ" onclick="myC()"></td>
+</tr>
+<td align="center"><input type="button" value=" + " onclick="myValue(1)"></td>
+<td align="center"><input type="button" value=" - " onclick="myValue(-1)"></td>
+</tr>
+</table>
+</form></td>
+            <td><form name="myForm2">
+<table border="0" bgcolor="#BDB76B">
+<tr>
+<td align="center" colspan="4" bgcolor="#d2691e"></td>
+</tr>
+<tr>
+<td colspan="3"><input type="text" size="5" name="myLine2" value="0"></td>
+
+<td align="center"><input type="button" value="Ｃ" onclick="myC2()"></td>
+</tr>
+<tr>   
+<td align="center"><input type="button" value=" + " onclick="myValue2(1)"></td>
+<td align="center"><input type="button" value=" - " onclick="myValue2(-1)"></td>
+</tr>
+</table>
+</form></td>
+              <td><form name="myForm4">
+<table border="0" bgcolor="#BDB76B">
+<tr>
+<td align="center" size = "5" colspan="4" bgcolor="#d2691e"></td>
+</tr>
+<tr>
+<td colspan="3"><input type="text" size="5" name="myLine4" value="0"></td>
+
+<td align="center"><input type="button" value="Ｃ" onclick="myC3()"></td>
+</tr>
+<tr>   
+<td align="center"><input type="button" value=" + " onclick="myValue3(1)"></td>
+<td align="center"><input type="button" value=" - " onclick="myValue3(-1)"></td>
+</tr>
+</table>
+</form></td>
+              <td><form name = "myForm3">
+    <input type="text" size="5" name="myLine3" value="0">%
+</form> </td>
           </tr>
           <tr>
             <th scope="row">2</th>
